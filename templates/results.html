@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Record Management System - Results</title>
+  <link rel="stylesheet" href="results.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Results</h2>
+    
+    <!-- Add Result Section -->
+    <div class="section">
+      <h3>Add Result</h3>
+      <form id="add-result-form">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" name="student-name" required>
+        
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+        
+        <label for="marks">Marks:</label>
+        <input type="text" id="marks" name="marks" required>
+        
+        <div class="button-container">
+          <button type="submit">Add Result</button>
+        </div>
+      </form>
+    </div>
+    
+    <!-- View Results Section -->
+    <div class="view-section">
+      <h3>View Results</h3>
+      <table id="result-table">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Result details will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <script src="results.js"></script>
+</body>
+</html>
